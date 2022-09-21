@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        <h2>Pekan Olahraga dan Seni Guru TKA/TPA</h2>
+        <h2>Tahun 2020</h2>
+        <div class="content">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td>NAMA PESERTA: </td>
+                    <td><input type="text" placeholder="Masukkan nama peserta lomba" id="nama1" size="50"></td>
+                </tr>
+                <tr>
+                    <td>TEMPAT TANGGAL LAHIR:</td>
+                    <td><input type="text" placeholder="Masukkan tempat tanggal lahir" id="ttl" size="50"></td>
+                </tr>
+                <tr>
+                    <td>UTUSAN UNIT TKA/TPA:</td>
+                    <td><input type="text" placeholder="Masukkan unit" id="unit" size="50"></td>
+                </tr>
+                <tr>
+                    <td>KELURAHAN/DESA:</td>
+                    <td><input type="text" placeholder="Masukkan kelurahan / desa" id="kelurahan" size="50"></td>
+                </tr>
+                <tr>
+                    <td>KECAMATAN:</td>
+                    <td><input type="text" placeholder="Masukkan kecamatan" id="kecamatan" size="50"></td>
+                </tr>
+                <tr>
+                    <td>NOMOR TELEPON:</td>
+                    <td><input type="text" placeholder="Masukkan nomor telepon" id="nomor" size="50" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <div class="lomba">
+                        <td>JENIS LOMBA:</td>
+                        <td>
+                        <input type="radio" id="lomba1" name="lomba" value="1">
+                        <label for="lomba1">Tarik Tambang (4 Perempuan + 1 Laki = 5 Orang)</label><br>
+                        <input type="radio" id="lomba2" name="lomba" value="2">
+                        <label for="lomba2">Lari Estafet (4 Perempuan)</label><br>
+                        <input type="radio" id="lomba3" name="lomba" value="3">
+                        <label for="lomba3">Gobak Sodor (4 Perempuan)</label><br>
+                        <input type="radio" id="lomba4" name="lomba" value="4">
+                        <label for="lomba4">Tartil (1 orang Perwakilan TKA/TPA)</label><br>
+                        <input type="radio" id="lomba5" name="lomba" value="5">
+                        <label for="lomba5">Ceramah (1 orang perwakilan TKA/TPA)</label><br>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+            <div class="confirm">
+                <h2>Konfirmasi:</h2>
+            </div>
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td>Kepala Unit TKA/TPA</td>
+                    <td><input type="text" placeholder="Konfirmasi nama kepala unit" id="kepala" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Peserta Lomba:</td>
+                    <td><input type="text" placeholder="Konfirmasi nama peserta lomba" id="nama2" size="50"></td>
+                </tr>
+            </table>
+            <div class="checbox">
+                <input type="checkbox" id="MyCheckbox" name="MyCheckbox" value="MyCheckbox">
+                <label required for="sk">Saya telah membaca dan menyetujui <a href="#">syarat dan ketentuan</a></label><br>
+            </div>
+            <div class="submitButton">
+                <input type="submit" id="sButton" class="button" value="Submit Form" onclick="submit()"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

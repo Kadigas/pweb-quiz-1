@@ -1,0 +1,70 @@
+* {
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(images/dgp.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container h1, h2{
+    text-align: center;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.container h1{
+    margin-top: 30px;
+}
+
+.container{
+    border-style: solid;
+    border-color: rgb(243, 188, 50);
+    border-width: 8px;
+    border-radius: 15px;
+    margin: 100px 100px;
+}
+
+.content {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: aliceblue;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.confirm{
+    margin-top: 30px;
+}
+
+.submitButton{
+    text-align: center;
+}
+
+.button {
+    padding: 5px 15px;
+    background-color: crimson;
+    border-radius: 8px;
+    border-style: none;
+    transition: 0.4s;
+    color: aliceblue;
+}
+
+.button:hover {
+    background-color: brown;
+    color: aliceblue;
+    cursor: pointer;
+}
